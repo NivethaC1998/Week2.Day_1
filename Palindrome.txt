@@ -1,0 +1,19 @@
+
+public class Palindrome {
+public static void main(String[] args) {
+	String text1 = "madam";
+	String text3 = "Madam";
+	String text2 = "";
+	char[] ch = text1.toCharArray();
+	for (int i = text1.length()-1; i>=0; i--)
+	{
+		text2 += ch[i];
+	}
+	if (text1.equals(text2))
+		System.out.println("Palindrome");
+	
+	// To use equalsignorecase
+	if (text1.equalsIgnoreCase(text3))
+		System.out.println("Palindrome");
+}
+}
